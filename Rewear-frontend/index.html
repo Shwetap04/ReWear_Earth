@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReWear Earth</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-top">
+      <div class="logo">ReWear</div>
+      <nav>
+        <a href="#">Pick a style</a>
+        <a href="#">Clothing</a>
+        <a href="#">Footwear</a>
+        <a href="#">Accessories</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Support</a>
+      </nav>
+      <div class="icons">
+        <a href="login.html" class="tooltip">
+          <i class="fas fa-user"></i>
+          <span class="tooltiptext">Account</span>
+        </a>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="banner.jpg" alt="Main Banner" />
+    <div class="hero-text">
+      <h1>Wishlist Worthy</h1>
+      <p>Swap clothes. Save the planet.</p>
+      <a href="#formContainer" class="cta">Start Swapping</a>
+    </div>
+  </section>
+
+  <section id="formContainer">
+    <h2>Login or Signup</h2>
+    <input type="text" id="name" placeholder="Name (only for signup)" />
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="login()">Login</button>
+
+    <h2>Add Item</h2>
+    <input type="text" id="userId" placeholder="User ID (after login)" />
+    <input type="text" id="itemTitle" placeholder="Item Title" />
+    <input type="text" id="itemSize" placeholder="Size" />
+    <input type="text" id="itemDesc" placeholder="Description" />
+    <input type="text" id="itemCategory" placeholder="Category" />
+    <input type="text" id="itemType" placeholder="Type" />
+    <input type="text" id="itemCondition" placeholder="Condition" />
+    <input type="text" id="itemTags" placeholder="Tags" />
+    <input type="text" id="itemImage" placeholder="Image URL" />
+    <button onclick="addItem()">Add Item</button>
+
+    <h2>All Items</h2>
+    <div id="itemsList" style="margin-top: 2rem;"></div>
+  </section>
+
+  <script src="script.js"></script>
+  <style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 80px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 4px 0;
+      position: absolute;
+      z-index: 1;
+      top: 125%;
+      left: 50%;
+      margin-left: -40px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</body>
+</html>
