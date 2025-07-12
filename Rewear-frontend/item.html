@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Item Details | ReWear Earth</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0b1d0f, #142e19, #1f4426, #2c5e2f, #51944a);
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #d0ffd0;
+    }
+
+    nav a {
+      color: #e0ffe0;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+
+    .icons i {
+      margin-left: 1rem;
+      color: #e0ffe0;
+      cursor: pointer;
+    }
+
+    .item-detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      justify-content: center;
+    }
+
+    .gallery {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .main-img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .thumbnail-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .thumbnail-row img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumbnail-row img:hover {
+      border-color: #66bb6a;
+    }
+
+    .item-info {
+      flex: 1;
+      min-width: 300px;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 1.5rem;
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+    }
+
+    .item-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #d0ffd0;
+    }
+
+    .item-info p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #f0f0f0;
+    }
+
+    .available {
+      color: #66ff99;
+      font-weight: bold;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .swap-btn, .points-btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .swap-btn {
+      background-color: #66bb6a;
+      color: white;
+    }
+
+    .points-btn {
+      background-color: #ffee58;
+      color: #222;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ReWear</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Browse</a>
+      <a href="#">Upload</a>
+      <a href="#">My Swaps</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-user"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <main class="item-detail-container">
+    <div class="gallery">
+      <img src="item1.jpg" alt="Main image" class="main-img" />
+      <div class="thumbnail-row">
+        <img src="item1.jpg" alt="Thumbnail 1" />
+        <img src="item2.jpg" alt="Thumbnail 2" />
+        <img src="item3.jpg" alt="Thumbnail 3" />
+      </div>
+    </div>
+
+    <div class="item-info">
+      <h2>Embroidered Festive Kurta</h2>
+      <p>This beautiful red kurta was worn only once during Diwali. It’s in excellent condition, hand-washed, and perfect for festivals or formal events.</p>
+      <p><strong>Size:</strong> M</p>
+      <p><strong>Category:</strong> Ethnic Wear</p>
+      <p><strong>Condition:</strong> Like New</p>
+      <p><strong>Tags:</strong> #Diwali #Red #Festive</p>
+      <p><strong>Status:</strong> <span class="available">Available</span></p>
+      <p><strong>Uploaded by:</strong> Shweta P. | Bengaluru</p>
+
+      <div class="action-buttons">
+        <button class="swap-btn"><i class="fas fa-exchange-alt"></i> Request Swap</button>
+        <button class="points-btn"><i class="fas fa-coins"></i> Redeem with Points</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 ReWear Earth | Built for a sustainable future
+  </footer>
+</body>
+</html>
